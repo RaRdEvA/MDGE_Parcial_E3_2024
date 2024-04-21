@@ -131,7 +131,7 @@ De acuerdo a la categoría que te haya tocado obtén (**desde 2018 a 2022**):
 **Nota:** ¡¡¡Lo principal aqui es tu código de SQL para construir las tablas!!! Eso es lo que voy a calificar. R y Pandas, están ahi para que puedas gráficar y hacer tus tablas bonitas en el reporte, OJO no para sacar las estadísticas.
 
 **Hint**: Guarda tus consultas en archivos que puedas guardar en S3 y luego
-leer desde Pandas o RStudio, para hacer tus gráficas o cuadros compartivos.
+leer desde Pandas o RStudio, para hacer tus gráficas o cuadros comparativos.
 
 ## Entregables
 
@@ -156,6 +156,7 @@ No hay cambios de fecha.
 ## Fechas
 
 > **Tienen dos semanas para realizarlo y mi sugerencia es que la primera semana saquen la primera parte y la segunda la parte restante y el reporte**
+>
 > Tienes del **miércoles 17 de abril al miércoles 1 de mayo.**
 
 ## Recomendaciones
