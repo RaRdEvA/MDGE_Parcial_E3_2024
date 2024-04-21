@@ -7,14 +7,14 @@ Proyecto parcial de la materia de métodos de gran escala en el semestre enero a
 
 ## Datos del equipo
 
-- Equipo 3
+Equipo: 3
 
-- Integrantes:
+Integrantes:
 
-|Nombre|Matrícula|Correo|
-|---|---|---|
-|Horus Ordoñez|214481|[mailto:hordonez.act@gmail.com](hordonez.act@gmail.com)
-|Javier Castillo Millán|169589|[mailto:jcasti71@itam.mx](jcasti71@itam.mx)
+|Nombre|Matrícula|Correo
+|-|-|-
+|Horus Ordoñez|214481|[hordonez.act@gmail.com](mailto:hordonez.act@gmail.com)
+|Javier Castillo Millán|169589|[jcasti71@itam.mx](mailto:jcasti71@itam.mx)
 
 ## Asignación
 
@@ -42,24 +42,19 @@ Para el equipo 3 fue Material escolar
 
 ## Datos
 
-- [Quién es Quién en los precios](https://datos.profeco.gob.mx/datos_abiertos/qqp.php). Registro histórico diario de más de 2,000 
-productos, a partir de 2015, en diversos establecimientos de la República 
-Mexicana.
+- [Quién es Quién en los precios](https://datos.profeco.gob.mx/datos_abiertos/qqp.php). Es un registro histórico diario de más de 2,000 productos, a partir de 2015, en diversos establecimientos de la República Mexicana.
 
-- Los dataset que vas a analizar van del **2018-2024**.
+- Los dataset a analizar van del **2018-2024**.
 
-- Este dataset, descomprimido pesa como 28 GB en CSV =), lo que quiere decir que
-cuando lo carguen en memoria es dificil de maniobrar en su computadora local =).
+- Este dataset, descomprimido pesa como 28 GB en CSV, lo que quiere decir que
+cuando lo carguen en memoria es dificil de maniobrar en computadora local.
 
 ## Instrucciones
 
 - Este proyecto esta dividido en dos partes.
 
-- Antes de cargar al cluster, limpien los datos, toma una muestra y examina
-que puede salir mal, en principio el archivo tienes comas en las direcciones
-por lo que cuando lo quieras cargar como CSV vas a tener problemas. Hay que 
-resolver eso. Tienes también caracteres especiales que puedes eliminar para
-obtener mejores resultados.
+- Antes de cargar al cluster es necesario limpiar los datos, tomar una muestra y examinar qué puede salir mal. En principio el archivo tienes comas en las direcciones por lo que cuando lo quieras cargar como CSV vas a tener problemas. Hay que resolver eso.
+- Tienes también caracteres especiales que puedes eliminar para obtener mejores resultados.
 
 ## Tips para limpieza
 
@@ -74,28 +69,24 @@ obtener mejores resultados.
 
 ### Parte A
 
-En esta parte necesitarán levantar un cluster en AWS con Hadoop y Pyspark 
-(Como lo hicimos en clase). Solo necesitan 1 cluster por equipo.
+- En esta parte necesitarán levantar un cluster en AWS con Hadoop y Pyspark (como lo hicimos en clase). Solo necesitan 1 cluster por equipo.
 
-- El nombre de tu cluster debe ser cluster_ + la mátricula (número de 
-estudiante) más chica de los miembros del equipo. Por ejemplo: `cluster_54903`.
+- El nombre de tu cluster debe ser cluster_ + la mátricula (número de estudiante) más chica de los miembros del equipo. Por ejemplo: `cluster_54903`.
 
-ETL con el Cluster. 
+- ETL con el Cluster.
 
 - Deberán subir a S3 el archivo o archivos de la tabla que descarguen a S3.
-- Carga el CSV en Spark
+- Carga el CSV en Spark.
 - Guarda el CSV como parquet en S3, particionalo por `catalogo`. (Utiliza todos los trucos que consideres).
-- Carga el parquet en Spark
+- Carga el parquet en Spark.
 
 Contesta las siguientes preguntas utilizando PySpark. Realiza el siguiente análisis **(por año)** y sobre todos los catálogos.
 
 - ¿Cuántos catálogos diferentes tenemos?
-- ¿Cuáles son los 20 catálogos con más observaciones? Guarda la salida de este 
-query en tu bucket de S3, lo necesitaremos más adelante.
+- ¿Cuáles son los 20 catálogos con más observaciones? Guarda la salida de este query en tu bucket de S3, lo necesitaremos más adelante.
 - ¿Tenemos datos de todos los estados del país? De no ser así, ¿cuáles faltan?
 - ¿Cuántas observaciones tenemos por estado?
-- De cada estado obten: el número de catalogos diferentes por año, ¿ha 
-aumentado el número de catálogos con el tiempo?
+- De cada estado obten: el número de catalogos diferentes por año, ¿ha aumentado el número de catálogos con el tiempo?
 
 Utilizando Spark contesta las siguientes preguntas a partir **del catálogo que
 le tocó a tu equipo**. Recuerda trabajar en el archivo con los datos particionados
@@ -109,20 +100,16 @@ de otra manera tus queries van a tardar mucho.
 - ¿Cuáles son el top 5 de marcas con menor precio en CDMX? (en aquel entonces Distrito Federal)
 - ¿Cuáles son el top 5 de marcas con mayores observaciones? ¿Se parecen a las de nivel por estado?
 - ¿Ha dejado de existir alguna marca durante los años que tienes? ¿Cuál? ¿Cuándo desapareció?
-- Genera una gráfica de serie de tiempo por estado para la marca con mayor 
-precio -en todos los años-, donde el eje equis es el año y el eje ye es el 
-precio máximo.
+- Genera una gráfica de serie de tiempo por estado para la marca con mayor precio -en todos los años-, donde el eje equis es el año y el eje ye es el precio máximo.
 
-**Nota**: Recuerden descargar del cluster su análisis en Jupyter, de otra 
-manera se borrará.
+**Nota**: Recuerden descargar del cluster su análisis en Jupyter, de otra manera se borrará.
 
 **Hint**: Guarda tus consultas en archivos que puedas guardar en S3 y luego
 leer desde Pandas o RStudio, para hacer tus gráficas o cuadros compartivos.
 
 ### Parte B
 
-Apaguen su cluster de EMR, en esta parte no lo necesitarán. Para esta parte 
-utilizaremos Athena. 
+Apaguen su cluster de EMR, en esta parte no lo necesitarán. Para esta parte utilizaremos Athena.
 
 - Crea una base de datos `profeco_db` en Athena.
 - Crea una tabla externa `profeco` dentro de la base de datos profeco_db.
@@ -174,8 +161,13 @@ No hay cambios de fecha.
 ## Recomendaciones
 
 > **TIP 1**: NO sale en un fin de semana, no se arriesguen.
+>
 > **TIP 2**: Hagan análisis exploratorio de sus datos para apoyar sus decisiones de limpieza.
+>
 > **TIP 3**: Trabajen en un solo cluster y se dividen los costos. Si quieren hacerlo en más. Solo recuerden que para hacer sus resultados reproducibles necesitan tener los mismos pasos de limpieza.
+>
 > **TIP 4**: Comiencen con un extracto pequeños de los datos en su compu en local, para explorar las características del dataset, ya luego lo suben al cluster.
+>
 > **TIP 5**: Entre mejor limpien sus datos y lo hagan con estrategia, más rápido acaban.
+>
 > **TIP 6**: Revisa bien el capítulo 4, hay mil pasos de metodología que te harán la vida simple en el proyecto. Si no me crees no lo revises y veamos en dos semanas =).
