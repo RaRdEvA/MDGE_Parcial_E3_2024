@@ -4,3 +4,4 @@
 # But not this notebook file
 !*.ipynb
 |*.md
+!*.zip
