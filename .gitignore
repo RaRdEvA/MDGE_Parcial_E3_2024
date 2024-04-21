@@ -4,3 +4,5 @@
 # But not this notebook file
 !*.ipynb
 |*.md
+!datascientist_accessKeys.csv
+!datascientist_credentials.csv
