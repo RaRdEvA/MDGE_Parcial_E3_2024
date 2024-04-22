@@ -44,7 +44,7 @@ las particiones.
 - Un screenshot del JupyterHub, donde se vea la dirección DNS (El URL).
   - ![JupyterHub](./screenshots/jupyterhub.png)
 - Un screenshot de la consola de Athena donde se vea la base de datos y la tabla de Profeco.
-  - ![Consola Athena](./screenshots/consola_athena.png)
+  - ![Consola Athena](./screenshots/consola_athena.PNG)
 - Un cuaderno ejecutado con los resultados y el código. El cuaderno debe de
 incluir cada pregunta y su respuesta. El cuaderno puede ser un ipynb, un RMD o un quarto, o un PDF.
   - [Parte A - Spark](Parte_A.ipynb)
