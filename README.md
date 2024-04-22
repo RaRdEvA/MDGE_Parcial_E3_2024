@@ -31,16 +31,21 @@ Las instrucciones pueden encontrarse en el archivo [tarea.md](tarea.md)
 El proyecto está dividido en 3 archivos:
 
 - [Limpieza de datos](ETL.ipynb)
-- [Parte A - Spark](a.ipynb)
-- [Parte B - Athena](b.ipynb)
+- [Parte A - Spark](Parte_A.ipynb)
+- [Parte B - Athena](Parte_B.ipynb)
 
 ## Entregables
 
 - Un screenshot de cómo guardaste los archivos en S3, donde se puedan ver
 las particiones.
+  - ![Particiones S3](./screenshots/particiones_s3.png)
 - Un screenshot del dashboard del cluster, donde se vea el nombre, el id del cluster, el DNS, y el tiempo de ejecución.
+  - ![Dashboard EMR](./screenshots/dashboard_cluster.png)
 - Un screenshot del JupyterHub, donde se vea la dirección DNS (El URL).
-- Un screenshot de la consola de Athena donde se vea la base de datos y la
-tabla de Profeco.
+  - ![JupyterHub](./screenshots/jupyterhub.png)
+- Un screenshot de la consola de Athena donde se vea la base de datos y la tabla de Profeco.
+  - ![Consola Athena](./screenshots/consola_athena.png)
 - Un cuaderno ejecutado con los resultados y el código. El cuaderno debe de
 incluir cada pregunta y su respuesta. El cuaderno puede ser un ipynb, un RMD o un quarto, o un PDF.
+  - [Parte A - Spark](Parte_A.ipynb)
+  - [Parte B - Athena](Parte_B.ipynb)
