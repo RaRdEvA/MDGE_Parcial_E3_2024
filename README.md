@@ -71,7 +71,7 @@ cuando lo carguen en memoria es dificil de maniobrar en computadora local.
 
 - En esta parte necesitarán levantar un cluster en AWS con Hadoop y Pyspark (como lo hicimos en clase). Solo necesitan 1 cluster por equipo.
 
-- El nombre de tu cluster debe ser cluster_ + la mátricula (número de estudiante) más chica de los miembros del equipo. Por ejemplo: `cluster_54903`.
+- El nombre de tu cluster debe ser cluster_ + la matrícula (número de estudiante) más chica de los miembros del equipo. Por ejemplo: `cluster_54903`.
 
 - ETL con el Cluster.
 
